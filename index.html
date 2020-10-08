@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href=“reset.css” rel=“stylesheet” type=“text/css”>
-    <link href=“style.css” rel=“stylesheet” type=“text/css”>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href=“/style/reset.css” rel=“stylesheet” type=“text/css”>
+    <link href="/style/style.css" rel="stylesheet" type="text/css">
     <title>My Portfolio</title>
 </head>
 <body>
+<div class="nav-div">
     <h1>Felipe Slaughter-Quintero</h1>
     <nav>
         <button onclick="window.location.href='index.html';"> Home </button>
@@ -16,15 +16,19 @@
         <button onclick="window.location.href='contact.html';"> Contact </button>
         <button onclick="window.location.href='projects.html';"> Projects </button>
     </nav>
-
-    <div class="section-1">
-        <img src="https://picsum.photos/id/1025/200" alt="sample image 1">
-        <section>
+</div>
+    <div id="img-container">
+        <img id="main-img" src="https://picsum.photos/id/1025/400/300" alt="sample image 1">
+    <main class="column">
+        <h3>Felipe Slaughter-Quintero</h3>
+        <button onclick="window.location.href='projects.html';"> My Projects </button>
+        <section id="main-section">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vehicula elit est, vel rhoncus purus viverra eu. Nullam pellentesque odio sapien, vitae commodo ex aliquet et. Integer commodo suscipit ex, ac porttitor leo tristique sit amet. Etiam pretium elit sed tortor ultricies tristique. Donec venenatis sagittis lorem eget imperdiet. Duis non tellus imperdiet, egestas nulla sed, gravida felis. Aenean accumsan justo purus, at auctor ipsum lacinia at. Vivamus scelerisque congue massa eu porttitor. Ut sit amet erat leo. Nullam varius hendrerit sodales. Fusce diam nulla, faucibus id euismod imperdiet, imperdiet nec purus.</p>
         </section>
+    </main>
     </div>
 
-    <div class="section-2">
+    <div id="img-container">
         <img src="https://picsum.photos/id/10/200">
         <img src="https://picsum.photos/id/1/200">
         <img src="https://picsum.photos/id/1001/200">
@@ -38,7 +42,7 @@
         <h4>Project 4</h4>
     </div>
     
-    <div class="section-3">
+    <div id="img-container">
         <img src="https://picsum.photos/id/1002/200">
         <img src="https://picsum.photos/id/101/200">
         <img src="https://picsum.photos/id/1016/200">
