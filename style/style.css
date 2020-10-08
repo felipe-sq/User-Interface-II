@@ -1,10 +1,12 @@
 /* CSS for project styling */
 
 * {
-    color: blue;
     box-sizing: border-box;
 }
 
+h1 {
+    color: dodgerblue;
+}
 .section-1 {
     display: flex;
     flex-flow: row;
