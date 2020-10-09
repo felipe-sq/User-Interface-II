@@ -4,8 +4,7 @@
 * {
     /* border: 1px solid red; */
     font-family: 'Abel', sans-serif;
-    padding: 2px;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 h1 {
@@ -16,44 +15,47 @@ h1 {
 nav {
     display: flex;
     flex-direction: row;
-    flex-direction: wrap;
+    flex-wrap: wrap;
 }
 
 .nav-div {
-    background: #b3d1ff;
-    padding: 10px 30px;
-    margin: 20px;
+    background: #0069cc;
+    color: white;
+    padding: 30px 30px;
+    margin: 0;
 }
 
 nav button {
-    border: 1px solid black;
+    border: 1px solid #80c1ff;
     border-radius: 7px;
-    background-color: lightgray;
+    background-color: white;
     height: 2rem;
-    width: 5rem;
+    width: 6rem;
     margin: 10px;
     font-size: 1.250em;
 }
 
 div.nav-div nav button:hover {
-    background-color: black;
+    background-color: #4da9ff;
     color: white;
 }
 
 #img-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 2.250em;
 }
 
 #img-container img {
-    border: 1px solid black;
+    border: 2.5px solid #004280;
 }
 
 .column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 10px 30px 10px 30px;
     padding: 10px 0;
 }
@@ -66,27 +68,38 @@ div.nav-div nav button:hover {
     border-radius: 7px;
     height: 2.1rem;
     width: 6.3rem;
-    background-color: lightgray;
+    background-color: #004f99;
+    color: white;
     font-size: 1em;
+}
+
+.column button:hover {
+    background: #4da9ff;
+    color: white;
 }
 
 .project-titles {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 10px 10px 10px;
+    margin: 1px 10px 10px 10px;
 }
 
 #main-section {
-    text-align: left;
+    text-align: center;
     font-size: 1.250em;
 }
 
 .footer-section {
-    background-color: #b3d1ff;
+    background-color: #0069cc;
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
     align-content: center;
+    padding: 20px;
+    margin: 0;
 }
 
 .footer-nav {
@@ -100,4 +113,9 @@ div.nav-div nav button:hover {
     width: 7rem;
     margin: 0;
     font-size: 1.250em;
+}
+
+.footer-nav button:hover {
+    background: #80c1ff;
+    color: white;
 }
