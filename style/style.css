@@ -119,3 +119,9 @@ div.nav-div nav button:hover {
     background: #80c1ff;
     color: white;
 }
+
+#about-blurb {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 10px;
+}
