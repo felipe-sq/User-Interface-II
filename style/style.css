@@ -4,6 +4,8 @@
 * {
     /* border: 1px solid red; */
     font-family: 'Abel', sans-serif;
+    padding: 2px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -18,16 +20,18 @@ nav {
 }
 
 .nav-div {
-    background: ;
-    padding: 10px 0;
+    background: #b3d1ff;
+    padding: 10px 30px;
+    margin: 20px;
 }
 
 nav button {
     border: 1px solid black;
+    border-radius: 7px;
     background-color: lightgray;
     height: 2rem;
     width: 5rem;
-    margin: 0;
+    margin: 10px;
     font-size: 1.250em;
 }
 
@@ -43,6 +47,10 @@ div.nav-div nav button:hover {
     padding: 2.250em;
 }
 
+#img-container img {
+    border: 1px solid black;
+}
+
 .column {
     display: flex;
     flex-direction: column;
@@ -50,7 +58,12 @@ div.nav-div nav button:hover {
     padding: 10px 0;
 }
 
+.column h2 {
+    font-size: 1.5em;
+}
+
 .column button {
+    border-radius: 7px;
     height: 2.1rem;
     width: 6.3rem;
     background-color: lightgray;
@@ -64,8 +77,22 @@ div.nav-div nav button:hover {
 }
 
 #main-section {
+    text-align: left;
+    font-size: 1.250em;
+}
+
+.footer-section {
+    background-color: #b3d1ff;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    
+    align-content: center;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    margin: 10px 1px 30px 1px;
 }
 
 .footer-nav button {
