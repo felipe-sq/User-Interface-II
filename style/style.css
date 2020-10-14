@@ -143,9 +143,9 @@ div.nav-div nav button:hover {
     padding: 20px 30px 10px;
 }
 
-@media all and (max-width: 800px)
+@media all and (max-width: 500px)
 {
-    /* code goes here */
+    /* code goes here for 500px screen size*/
     body {
         display: flex;
         flex-flow:column nowrap;
@@ -191,7 +191,49 @@ div.nav-div nav button:hover {
     }
 }
 
-@media all and (max-width: 500px)
+@media all and (max-width: 800px)
 {
-    /* code goes here */
+    body {
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        align-items:center;
+      }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav button {
+        border: 1px solid #80c1ff;
+        border-radius: 7px;
+        background-color: white;
+        height: 3rem;
+        width: 7rem;
+        margin: 5px;
+        font-size: 1.50em;
+    }
+
+    nav button:hover {
+        background-color: #4da9ff;
+        color: white;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
