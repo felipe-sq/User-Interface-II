@@ -125,3 +125,13 @@ div.nav-div nav button:hover {
     flex-direction: column;
     padding: 20px 30px 10px;
 }
+
+@media all and (max-width: 800px)
+{
+    /* code goes here */
+}
+
+@media all and (max-width: 500px)
+{
+    /* code goes here */
+}
