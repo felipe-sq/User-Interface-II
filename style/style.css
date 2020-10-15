@@ -169,6 +169,14 @@ div.nav-div nav button:hover {
         margin: 0 0 0 30px;
     }
 
+    .nav-div nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 50%;
+    }
+
     nav button {
         border: 1px solid #80c1ff;
         border-radius: 7px;
@@ -198,7 +206,7 @@ div.nav-div nav button:hover {
     }
 
     .img-row-1, .img-row-2 {
-        margin: 0 0 10px 20px;
+        margin: 0 0 10px 30px;
     }
 
     .footer-section {
@@ -210,13 +218,6 @@ div.nav-div nav button:hover {
 
 @media all and (max-width: 500px)
 {
-    body {
-        display: flex;
-        flex-flow:column nowrap;
-        justify-content:center;
-        align-items:center;
-      }
-
     .nav-div {
         display: flex;
         flex-direction: column;
@@ -246,6 +247,8 @@ div.nav-div nav button:hover {
     .top-section {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
     }
 
     .footer-section {
@@ -272,7 +275,7 @@ div.nav-div nav button:hover {
 
     .nav-div nav {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     nav button {
