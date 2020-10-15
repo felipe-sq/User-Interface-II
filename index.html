@@ -8,60 +8,65 @@
     <title>My Portfolio</title>
 </head>
 <body>
-<div class="nav-div">
+<header class="nav-div">
     <h1>Felipe Slaughter-Quintero</h1>
     <nav>
         <button onclick="window.location.href='about.html';"> About </button>
         <button onclick="window.location.href='contact.html';"> Contact </button>
         <button onclick="window.location.href='projects.html';"> Projects </button>
     </nav>
-</div>
-    <div id="img-container">
-        <img id="main-img" src="https://picsum.photos/id/1025/400/300" alt="sample image 1">
-    <main class="column">
-        <h2>Felipe Slaughter-Quintero</h2><br>
-        <button onclick="window.location.href='projects.html';"> My Projects </button><br>
-        <section id="main-section">
-            <p>I am an aspiring Web Developer currently expanding my knowledge at Lambda School. </p>
-            <p>Check out some of my projects via the projects link or by clicking on the individual thumbnails.</p>
-        </section>
-    </main>
-    </div>
+</header>
 
-    <div id="img-container">
-        <img src="https://picsum.photos/id/10/200">
-        <img src="https://picsum.photos/id/1/200">
-        <img src="https://picsum.photos/id/1001/200">
-        <img src="https://picsum.photos/id/100/200">
-    </div>
+    <section class="top-section">
+        <div id="img-container">
+            <img id="main-img" src="https://picsum.photos/id/1025/400/300" alt="sample image 1">
+        </div>
+        <main class="top-section-column">
+            <h2>Felipe Slaughter-Quintero</h2>
+            <button onclick="window.location.href='projects.html';"> My Projects </button><br>
+            <section id="main-section">
+                <p>I am an aspiring Web Developer currently expanding my knowledge at Lambda School. </p>
+                <p>Check out some of my projects via the projects link or by clicking on the individual thumbnails.</p>
+            </section>
+        </main>
+    </section>
 
-    <div class="project-titles">
-        <h4>Project 1</h4>
-        <h4>Project 2</h4>
-        <h4>Project 3</h4>
-        <h4>Project 4</h4>
-    </div>
-    
-    <div id="img-container">
-        <img src="https://picsum.photos/id/1002/200">
-        <img src="https://picsum.photos/id/101/200">
-        <img src="https://picsum.photos/id/1016/200">
-        <img src="https://picsum.photos/id/102/200">
-    </div>
+        <div class="img-row-1">
+            <section id="img-container1">
+                <img src="https://picsum.photos/id/10/200" alt="Thumbnail for Project 1"><h2>Project 1</h2>
+            </section>
+            <section id="img-container2">
+                <img src="https://picsum.photos/id/1/200" alt="Thumbnail for Project 2"><h2>Project 2</h2>
+            </section>
+            <section id="img-container3">
+                <img src="https://picsum.photos/id/1001/200" alt="Thumbnail for Project 3"><h2>Project 3</h2>
+            </section>
+            <section id="img-container4">
+                <img src="https://picsum.photos/id/100/200" alt="Thumbnail for Project 4"><h2>Project 4</h2>
+            </section>
+        </div>
 
-    <div class="project-titles">
-        <h4>Project 5</h4>
-        <h4>Project 6</h4>
-        <h4>Project 7</h4>
-        <h4>Project 8</h4>
-    </div><br>
+        <div class="img-row-2">
+            <section id="img-container5">
+                <img src="https://picsum.photos/id/1002/200" alt="Thumbnail for Project 5"><h2>Project 5</h2>
+            </section>
+            <section id="img-container6">
+                <img src="https://picsum.photos/id/101/200" alt="Thumbnail for Project 6"><h2>Project 6</h2>
+            </section>
+            <section id="img-container7">
+                <img src="https://picsum.photos/id/1016/200" alt="Thumbnail for Project 7"><h2>Project 7</h2>
+            </section>
+            <section id="img-container8">    
+                <img src="https://picsum.photos/id/102/200" alt="Thumbnail for Project 8"><h2>Project 8</h2>
+            </section>
+        </div>
 
-    <div class="footer-section">
+    <footer class="footer-section">
         <h2>Like what you see?</h2>
         <nav class="footer-nav">
             <button onclick="location.href='mailto:felipe.quintero@lambdastudents.com?subject=Your Online Portfolio is Awesome!';"> Email Me! </button>
             <button onclick="window.open('http://www.linkedin.com/in/felipe-slaughter-quintero');"> LinkedIn Profile</button>
         </nav>
-    </div>
+    </footer>
 </body>
 </html>

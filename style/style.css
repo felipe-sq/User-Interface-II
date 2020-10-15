@@ -7,6 +7,11 @@
     margin: 0 auto;
 }
 
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
 h1 {
     font-family: 'Architects Daughter', sans-serif;
     font-size: 2.5em;
@@ -40,11 +45,30 @@ div.nav-div nav button:hover {
     color: white;
 }
 
-#img-container {
+.top-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 20px 10px 30px;
+}
+
+.img-row-1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    text-align: center;
+    padding: 2.250em;
+}
+
+.img-row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
     padding: 2.250em;
 }
 
@@ -52,19 +76,20 @@ div.nav-div nav button:hover {
     border: 2.5px solid #004280;
 }
 
-.column {
+.top-section-column {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
     margin: 10px 30px 10px 30px;
-    padding: 10px 0;
+    padding: 10px 30px 10px 0;
 }
 
-.column h2 {
+.top-section-column h2 {
     font-size: 1.5em;
 }
 
-.column button {
+.top-section-column button {
     border-radius: 7px;
     height: 2.1rem;
     width: 6.3rem;
@@ -73,7 +98,7 @@ div.nav-div nav button:hover {
     font-size: 1em;
 }
 
-.column button:hover {
+.top-section-column button:hover {
     background: #4da9ff;
     color: white;
 }
@@ -120,8 +145,192 @@ div.nav-div nav button:hover {
     color: white;
 }
 
+#about-page-img-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 20px 10px 50px;
+}
+
+#about-page-img-container img {
+    border: 2.5px solid #004280;
+}
+
 #about-blurb {
     display: flex;
     flex-direction: column;
     padding: 20px 30px 10px;
+}
+
+@media all and (max-width: 360px) 
+{
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        margin: 0 0 0 30px;
+    }
+
+    .nav-div nav {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 50%;
+    }
+
+    nav button {
+        border: 1px solid #80c1ff;
+        border-radius: 7px;
+        background-color: white;
+        height: 3rem;
+        width: 7rem;
+        margin: 5px;
+        font-size: 1.50em;
+    }
+
+    nav button:hover {
+        background-color: #4da9ff;
+        color: white;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+        margin: 10px 0 0 10px;
+    }
+
+    .top-section-column {
+        align-items: center;
+        margin: 10px 10px 0 50px;
+    }
+
+    .img-row-1, .img-row-2 {
+        margin: 0 0 10px 30px;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
+        width: 100%;
+    }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
+    }
+}
+
+@media all and (max-width: 500px)
+{
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav button {
+        border: 1px solid #80c1ff;
+        border-radius: 7px;
+        background-color: white;
+        height: 3rem;
+        width: 7rem;
+        margin: 5px;
+        font-size: 1.50em;
+    }
+
+    nav button:hover {
+        background-color: #4da9ff;
+        color: white;
+    }
+
+    .top-section {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    .img-row-2, .img-row-2 {
+        justify-content: space-evenly;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    body {
+        display: flex;
+        flex-flow:column nowrap;
+        justify-content:center;
+        align-items:center;
+      }
+
+    .nav-div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-div nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav button {
+        border: 1px solid #80c1ff;
+        border-radius: 7px;
+        background-color: white;
+        height: 3rem;
+        width: 7rem;
+        margin: 5px;
+        font-size: 1.50em;
+    }
+
+    nav button:hover {
+        background-color: #4da9ff;
+        color: white;
+    }
+
+    .top-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
+    }
 }
