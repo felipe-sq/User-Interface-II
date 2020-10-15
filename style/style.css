@@ -145,6 +145,16 @@ div.nav-div nav button:hover {
     color: white;
 }
 
+#about-page-img-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 20px 10px 50px;
+}
+
+#about-page-img-container img {
+    border: 2.5px solid #004280;
+}
+
 #about-blurb {
     display: flex;
     flex-direction: column;
@@ -209,6 +219,13 @@ div.nav-div nav button:hover {
         align-content: center;
         width: 100%;
     }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
+    }
 }
 
 @media all and (max-width: 500px)
@@ -254,6 +271,13 @@ div.nav-div nav button:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
     }
 }
 
@@ -301,5 +325,12 @@ div.nav-div nav button:hover {
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    #about-page-img-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 30px 20px 10px 50px;
     }
 }
