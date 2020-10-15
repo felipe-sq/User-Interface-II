@@ -76,7 +76,7 @@ div.nav-div nav button:hover {
     border: 2.5px solid #004280;
 }
 
-.column {
+.top-section-column {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -85,11 +85,11 @@ div.nav-div nav button:hover {
     padding: 10px 30px 10px 0;
 }
 
-.column h2 {
+.top-section-column h2 {
     font-size: 1.5em;
 }
 
-.column button {
+.top-section-column button {
     border-radius: 7px;
     height: 2.1rem;
     width: 6.3rem;
@@ -98,7 +98,7 @@ div.nav-div nav button:hover {
     font-size: 1em;
 }
 
-.column button:hover {
+.top-section-column button:hover {
     background: #4da9ff;
     color: white;
 }
@@ -153,18 +153,11 @@ div.nav-div nav button:hover {
 
 @media all and (max-width: 360px) 
 {
-    body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        text-align: center;
-      } 
-
     .nav-div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
         width: 100%;
         margin: 0 0 0 30px;
     }
@@ -200,7 +193,7 @@ div.nav-div nav button:hover {
         margin: 10px 0 0 10px;
     }
 
-    .column {
+    .top-section-column {
         align-items: center;
         margin: 10px 10px 0 50px;
     }
@@ -212,6 +205,8 @@ div.nav-div nav button:hover {
     .footer-section {
         display: flex;
         flex-direction: column;
+        justify-content: space-evenly;
+        align-content: center;
         width: 100%;
     }
 }
@@ -246,9 +241,13 @@ div.nav-div nav button:hover {
 
     .top-section {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-flow: column wrap;
+        justify-content: space-evenly;
         align-content: center;
+    }
+
+    .img-row-2, .img-row-2 {
+        justify-content: space-evenly;
     }
 
     .footer-section {
